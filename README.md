@@ -9,6 +9,8 @@ Tools:
 4. BDD framework for to write tests: [Cucumber]
 5. Test Reports Generation: after running the tests need to go to following folder and open the index.html file in browser [target/cucumber-html-report/index.html]
 6. Make sure [Cucumber for Java] is installed in the editor
+7. OS[Windows]
+
 
 maven run command: [below are maven commands for to run in different browser]
 mvn clean verify -Dbrowser=chrome
