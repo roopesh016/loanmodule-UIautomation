@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="17.319007">
-    <testcase classname="Loan eligibility calculator" name="Verify with the loan estimation value based upon the user provides the details" time="6.345364">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="32.351924">
+    <testcase classname="Loan estimation calculator" name="Verify with the loan estimation value based upon the user provides the details" time="7.694772">
         <system-out><![CDATA[Given Launch the ANZ loan calculator web page...............................passed
 And Provide all the required details with respective to loan calculation....passed
 Then Verify with loan estimation value......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Loan eligibility calculator" name="Verify whether loan calculator form gets clear when user clicks on start over" time="5.141381">
+    <testcase classname="Loan estimation calculator" name="Verify whether loan calculator form gets clear when user clicks on start over" time="17.685942">
         <system-out><![CDATA[Given Launch the ANZ loan calculator web page...............................passed
 And Provide all the required details with respective to loan calculation....passed
 Then Verify whether the loan calculation form gets clear immediately once the user clicks on start over.passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Loan eligibility calculator" name="Verify for the appropriate message when user provides an invalid data" time="5.832262">
+    <testcase classname="Loan estimation calculator" name="Verify for the appropriate message when user provides an invalid data" time="6.97121">
         <system-out><![CDATA[Given Launch the ANZ loan calculator web page...............................passed
-And Provide all the required details with respective to loan calculation....passed
+And Provide an invalid details with respective to loan calculation..........passed
 Then Verify for the appropriate message when user provides an invalid data in loan claculator form.passed
 ]]></system-out>
     </testcase>

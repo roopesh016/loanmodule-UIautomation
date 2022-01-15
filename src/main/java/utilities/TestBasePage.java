@@ -1,10 +1,13 @@
 package utilities;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -81,13 +84,13 @@ public class TestBasePage {
         }
     };
 
+    Actions actions = new Actions(driver);
 
     public WebDriver getDriver(){
         return driver;
     }
 
 
-    //For to fetch the project location
     public String getProjectLocation() {
         return System.getProperty("user.dir");
     }
@@ -106,10 +109,43 @@ public class TestBasePage {
     public void launchChrome() {
         System.setProperty("webdriver.chrome.driver",getProjectLocation() + File.separator + "drivers" + File.separator+ "chromedriver.exe");
         driver = new ChromeDriver();
+        maximizeWindow();
     }
 
     public void launchFirefox() {
-        System.setProperty("","");
+        System.setProperty("webdriver.gecko.driver",getProjectLocation() + File.separator + "drivers" + File.separator + "geckodriver.exe");
         driver = new FirefoxDriver();
+        maximizeWindow();
     }
+
+
+    public void launchIEBrowser() {
+        System.setProperty("webdriver.ie.driver",getProjectLocation() + File.separator + "drivers" + File.separator + "IEDriverServer.exe");
+        driver = new InternetExplorerDriver();
+        maximizeWindow();
+    }
+
+    public Actions clickOperation(WebElement element){
+        return actions.click();
+    }
+
+    public void jsClick(WebElement element){
+        JavascriptExecutor executor = (JavascriptExecutor)driver;
+        executor.executeScript("arguments[0].click();", element);
+    }
+
+
+    public void waitUntilElementPresent(By element){
+        WebDriverWait webDriverWait = new WebDriverWait(driver,30);
+        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(element));
+    }
+
+    public void maximizeWindow() {
+        driver.manage().window().maximize();
+    }
+
+    public void quitBrowser() {
+        driver.quit();
+    }
+
 }

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="12" failures="0" name="TestRunner" time="0.002" errors="0" skipped="0">
+<testsuite tests="12" failures="0" name="TestRunner" time="0.004" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="15.0.1+9-18"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15.0.1\bin"/>
+    <property name="browser" value="chrome"/>
     <property name="maven.multiModuleProjectDirectory" value="C:\Users\91861\Desktop\loanmodule-UIautomation"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
@@ -43,7 +44,7 @@
     <property name="java.class.path" value="C:\Program Files\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="15"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean verify"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean verify -Dbrowser=chrome"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-15.0.1"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -63,13 +64,13 @@
   <testcase classname="Scenario: Verify with the loan estimation value based upon the user provides the details" name="Given Launch the ANZ loan calculator web page" time="0.001"/>
   <testcase classname="Scenario: Verify with the loan estimation value based upon the user provides the details" name="And Provide all the required details with respective to loan calculation" time="0"/>
   <testcase classname="Scenario: Verify with the loan estimation value based upon the user provides the details" name="Then Verify with loan estimation value" time="0"/>
-  <testcase classname="Scenario: Verify with the loan estimation value based upon the user provides the details" name="Scenario: Verify with the loan estimation value based upon the user provides the details" time="0"/>
+  <testcase classname="Scenario: Verify with the loan estimation value based upon the user provides the details" name="Scenario: Verify with the loan estimation value based upon the user provides the details" time="0.001"/>
   <testcase classname="Scenario: Verify whether loan calculator form gets clear when user clicks on start over" name="Given Launch the ANZ loan calculator web page" time="0"/>
   <testcase classname="Scenario: Verify whether loan calculator form gets clear when user clicks on start over" name="And Provide all the required details with respective to loan calculation" time="0"/>
   <testcase classname="Scenario: Verify whether loan calculator form gets clear when user clicks on start over" name="Then Verify whether the loan calculation form gets clear immediately once the user clicks on start over" time="0"/>
   <testcase classname="Scenario: Verify whether loan calculator form gets clear when user clicks on start over" name="Scenario: Verify whether loan calculator form gets clear when user clicks on start over" time="0"/>
   <testcase classname="Scenario: Verify for the appropriate message when user provides an invalid data" name="Given Launch the ANZ loan calculator web page" time="0"/>
-  <testcase classname="Scenario: Verify for the appropriate message when user provides an invalid data" name="And Provide all the required details with respective to loan calculation" time="0"/>
+  <testcase classname="Scenario: Verify for the appropriate message when user provides an invalid data" name="And Provide an invalid details with respective to loan calculation" time="0"/>
   <testcase classname="Scenario: Verify for the appropriate message when user provides an invalid data" name="Then Verify for the appropriate message when user provides an invalid data in loan claculator form" time="0"/>
-  <testcase classname="Scenario: Verify for the appropriate message when user provides an invalid data" name="Scenario: Verify for the appropriate message when user provides an invalid data" time="0.001"/>
+  <testcase classname="Scenario: Verify for the appropriate message when user provides an invalid data" name="Scenario: Verify for the appropriate message when user provides an invalid data" time="0.002"/>
 </testsuite>

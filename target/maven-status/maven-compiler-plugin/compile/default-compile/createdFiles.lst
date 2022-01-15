@@ -1,4 +1,5 @@
 locators\LoanCalculatorElementLocators.class
 utilities\TestBasePage$1.class
 utilities\TestBasePage.class
+assertions\LoanCalculatorAssertions.class
 pages\LoanCalculatorPage.class

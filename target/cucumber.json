@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6345260900,
+              "duration": 6260891400,
               "status": "passed"
             },
             "line": 4,
@@ -20,18 +20,6 @@
               "location": "LoanCalculator.launchTheANZLoanCalculatorWebPage()"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 67500,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Provide all the required details with respective to loan calculation",
-            "match": {
-              "location": "LoanCalculator.provideAllTheRequiredDetailsWithRespectiveToLoanCalculation()"
-            },
-            "keyword": "And "
           }
         ]
       },
@@ -39,16 +27,28 @@
         "line": 8,
         "name": "Verify with the loan estimation value based upon the user provides the details",
         "description": "",
-        "id": "loan-eligibility-calculator;verify-with-the-loan-estimation-value-based-upon-the-user-provides-the-details",
+        "id": "loan-estimation-calculator;verify-with-the-loan-estimation-value-based-upon-the-user-provides-the-details",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 35200,
+              "duration": 652904400,
               "status": "passed"
             },
             "line": 9,
+            "name": "Provide all the required details with respective to loan calculation",
+            "match": {
+              "location": "LoanCalculator.provideAllTheRequiredDetailsWithRespectiveToLoanCalculation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 780976500,
+              "status": "passed"
+            },
+            "line": 10,
             "name": "Verify with loan estimation value",
             "match": {
               "location": "LoanCalculator.verifyWithLoanEstimationValue()"
@@ -66,7 +66,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5141291700,
+              "duration": 5705874000,
               "status": "passed"
             },
             "line": 4,
@@ -75,35 +75,35 @@
               "location": "LoanCalculator.launchTheANZLoanCalculatorWebPage()"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 33000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Provide all the required details with respective to loan calculation",
-            "match": {
-              "location": "LoanCalculator.provideAllTheRequiredDetailsWithRespectiveToLoanCalculation()"
-            },
-            "keyword": "And "
           }
         ]
       },
       {
-        "line": 12,
+        "line": 13,
         "name": "Verify whether loan calculator form gets clear when user clicks on start over",
         "description": "",
-        "id": "loan-eligibility-calculator;verify-whether-loan-calculator-form-gets-clear-when-user-clicks-on-start-over",
+        "id": "loan-estimation-calculator;verify-whether-loan-calculator-form-gets-clear-when-user-clicks-on-start-over",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 56300,
+              "duration": 894056400,
               "status": "passed"
             },
-            "line": 13,
+            "line": 14,
+            "name": "Provide all the required details with respective to loan calculation",
+            "match": {
+              "location": "LoanCalculator.provideAllTheRequiredDetailsWithRespectiveToLoanCalculation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11086011200,
+              "status": "passed"
+            },
+            "line": 15,
             "name": "Verify whether the loan calculation form gets clear immediately once the user clicks on start over",
             "match": {
               "location": "LoanCalculator.verifyWhetherTheLoanCalculationFormGetsClearImmediatelyOnceTheUserClicksOnStartOver()"
@@ -121,7 +121,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5832146800,
+              "duration": 5545573800,
               "status": "passed"
             },
             "line": 4,
@@ -130,35 +130,35 @@
               "location": "LoanCalculator.launchTheANZLoanCalculatorWebPage()"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 72200,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Provide all the required details with respective to loan calculation",
-            "match": {
-              "location": "LoanCalculator.provideAllTheRequiredDetailsWithRespectiveToLoanCalculation()"
-            },
-            "keyword": "And "
           }
         ]
       },
       {
-        "line": 16,
+        "line": 18,
         "name": "Verify for the appropriate message when user provides an invalid data",
         "description": "",
-        "id": "loan-eligibility-calculator;verify-for-the-appropriate-message-when-user-provides-an-invalid-data",
+        "id": "loan-estimation-calculator;verify-for-the-appropriate-message-when-user-provides-an-invalid-data",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 43300,
+              "duration": 652637200,
               "status": "passed"
             },
-            "line": 17,
+            "line": 19,
+            "name": "Provide an invalid details with respective to loan calculation",
+            "match": {
+              "location": "LoanCalculator.provideAnInvalidDetailsWithRespectiveToLoanCalculation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 772999000,
+              "status": "passed"
+            },
+            "line": 20,
             "name": "Verify for the appropriate message when user provides an invalid data in loan claculator form",
             "match": {
               "location": "LoanCalculator.verifyForTheAppropriateMessageWhenUserProvidesAnInvalidDataInLoanClaculatorForm()"
@@ -168,9 +168,9 @@
         ]
       }
     ],
-    "name": "Loan eligibility calculator",
+    "name": "Loan estimation calculator",
     "description": "",
-    "id": "loan-eligibility-calculator",
+    "id": "loan-estimation-calculator",
     "keyword": "Feature",
     "uri": "loans.feature"
   }
