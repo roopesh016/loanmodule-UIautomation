@@ -1,0 +1,177 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Launch the ANZ loan calculator page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6345260900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch the ANZ loan calculator web page",
+            "match": {
+              "location": "LoanCalculator.launchTheANZLoanCalculatorWebPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 67500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Provide all the required details with respective to loan calculation",
+            "match": {
+              "location": "LoanCalculator.provideAllTheRequiredDetailsWithRespectiveToLoanCalculation()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Verify with the loan estimation value based upon the user provides the details",
+        "description": "",
+        "id": "loan-eligibility-calculator;verify-with-the-loan-estimation-value-based-upon-the-user-provides-the-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 35200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify with loan estimation value",
+            "match": {
+              "location": "LoanCalculator.verifyWithLoanEstimationValue()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Launch the ANZ loan calculator page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5141291700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch the ANZ loan calculator web page",
+            "match": {
+              "location": "LoanCalculator.launchTheANZLoanCalculatorWebPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 33000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Provide all the required details with respective to loan calculation",
+            "match": {
+              "location": "LoanCalculator.provideAllTheRequiredDetailsWithRespectiveToLoanCalculation()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Verify whether loan calculator form gets clear when user clicks on start over",
+        "description": "",
+        "id": "loan-eligibility-calculator;verify-whether-loan-calculator-form-gets-clear-when-user-clicks-on-start-over",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 56300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Verify whether the loan calculation form gets clear immediately once the user clicks on start over",
+            "match": {
+              "location": "LoanCalculator.verifyWhetherTheLoanCalculationFormGetsClearImmediatelyOnceTheUserClicksOnStartOver()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Launch the ANZ loan calculator page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5832146800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch the ANZ loan calculator web page",
+            "match": {
+              "location": "LoanCalculator.launchTheANZLoanCalculatorWebPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 72200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Provide all the required details with respective to loan calculation",
+            "match": {
+              "location": "LoanCalculator.provideAllTheRequiredDetailsWithRespectiveToLoanCalculation()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Verify for the appropriate message when user provides an invalid data",
+        "description": "",
+        "id": "loan-eligibility-calculator;verify-for-the-appropriate-message-when-user-provides-an-invalid-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 43300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Verify for the appropriate message when user provides an invalid data in loan claculator form",
+            "match": {
+              "location": "LoanCalculator.verifyForTheAppropriateMessageWhenUserProvidesAnInvalidDataInLoanClaculatorForm()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Loan eligibility calculator",
+    "description": "",
+    "id": "loan-eligibility-calculator",
+    "keyword": "Feature",
+    "uri": "loans.feature"
+  }
+]
